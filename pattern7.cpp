@@ -25,6 +25,7 @@ int main(){
 }
 
 /*
+
 Variant 1: Both start from 0 (The Standard Programmer Way)
 for(int i = 0; i < n; i++){
     // Runs n-i times (5, then 4, then 3...)
@@ -33,10 +34,7 @@ for(int i = 0; i < n; i++){
     }
     cout << endl;
 }
-*/
 
-
-/*
 Variant 2: i starts from n, j starts from 1 (The Countdown Way)
 for(int i = n; i >= 1; i--) {
     // When i is 5, this runs 1 to 5. When i is 4, 1 to 4.
@@ -54,4 +52,14 @@ for(int i = 1; i <= n; i++) {
     }
     cout << endl;
 }
+
+Variant 4: Both start high and count down (Double Countdown)
+for(int i = n; i >= 1; i--) {
+    // Starts at i and counts down to 1
+    for(int j = i; j >= 1; j--) {
+        cout << "* ";
+    }
+    cout << endl;
+}
+
 */
