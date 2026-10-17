@@ -23,3 +23,15 @@ int main(){
         cout << endl;
     }
 }
+
+/*
+Variant 1: Both start from 0 (The Standard Programmer Way)
+    
+    for(int i = 0; i < n; i++){
+        // Runs n-i times (5, then 4, then 3...)
+        for(int j = 0; j < n - i; j++){
+            cout << "* ";
+        }
+        cout << endl;
+    }
+*/
