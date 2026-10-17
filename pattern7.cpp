@@ -35,3 +35,15 @@ Variant 1: Both start from 0 (The Standard Programmer Way)
         cout << endl;
     }
 */
+
+
+/*
+Variant 2: i starts from n, j starts from 1 (The Countdown Way)
+for(int i = n; i >= 1; i--) {
+    // When i is 5, this runs 1 to 5. When i is 4, 1 to 4.
+    for(int j = 1; j <= i; j++) {
+        cout << "* ";
+    }
+    cout << endl;
+}
+*/
