@@ -16,7 +16,7 @@ int main(){
 
     for(int i = 1; i <= n; i++){
         for(int j = 0; j < i; j++) {
-            char ch = 'A' + j; 
+            char ch = 'A' + j;  // char ch = (char)('A'+j);
             cout << ch << " ";
         }
         cout << endl;
