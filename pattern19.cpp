@@ -12,7 +12,7 @@ using namespace std;
 int main(){
 
     int n;
-    cout << "Enter n: ";
+    cout << "Enter no. of rows here: ";
     cin >> n;
 
     for(int i = 1; i <= n; i++){
@@ -32,3 +32,42 @@ int main(){
     }
     return 0;
 }
+
+
+/*
+    int chars = 1;
+    for(int i = 1; i <= n; i++){
+
+        // 1st Loop: for spaces before
+        for(int j = 1; j <= n - i; j++){
+            cout << " ";
+        }
+
+        // 2nd Loop: for characters
+        char ch = 'A';
+        for(int j = 1; j <= chars; j++){
+            cout << ch;
+            
+            // The Magic Logic: Should the next letter go up or down?
+            if(j < i)
+            {
+                ch++; // Move forward in the alphabet (A -> B)
+            }
+            else
+            {
+                ch--; // Move backward in the alphabet (B -> A)
+            }
+        }
+
+        // 3rd Loop: for spaces after
+        for(int j = 1; j <= n - i; j++){
+            cout << " ";
+        }
+        
+        cout << endl;
+        chars += 2; // Increase character count by 2 for the next row
+    }
+    return 0;
+}
+
+*/
