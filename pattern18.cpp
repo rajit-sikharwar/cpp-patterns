@@ -16,7 +16,7 @@ int main(){
     cin >> n;
 
     for(int i = 1; i <= n; i++){
-        
+
         char ch = 'A' + (i - 1);
 
         for(int j = 1; j <= i; j++){
@@ -26,3 +26,17 @@ int main(){
     }
     return 0;
 }
+
+/* 
+Alternative solution if rows start from 0th [Zero]
+
+for(int i = 0; i < n; i++){
+
+    char ch = 'A'+i;
+
+    for(int j = 0; j <= i; j++){
+        cout << ch << " ";
+    }
+    cout << endl;
+}
+*/
